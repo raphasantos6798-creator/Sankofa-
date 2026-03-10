@@ -1,0 +1,19 @@
+{
+  "name": "sankofa-database",
+  "version": "1.0.0",
+  "description": "Database schemas and migrations for Sankofa platform",
+  "main": "index.js",
+  "scripts": {
+    "migrate": "node migrations/run.js",
+    "seed": "node seeds/initial-seed.js",
+    "setup": "npm run migrate && npm run seed",
+    "test": "jest"
+  },
+  "dependencies": {
+    "pg": "^8.10.0",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
